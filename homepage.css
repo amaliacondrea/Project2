@@ -1,0 +1,54 @@
+body{
+    margin:0;
+}
+
+.menu {
+background-color:black;
+height: 200px;
+width: 100%;
+}
+
+.menu-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+
+
+}
+
+.standard-buttons {
+background-color: transparent;
+color:white;
+text-transform: uppercase;
+height: 65px;
+margin-left: 15px;
+border: none;
+
+}
+
+.special-button{
+background-color: red;
+color: white;
+text-transform: uppercase;
+height: 65px;
+margin-left: 15px;
+border: none;
+
+}
+
+
+.content {
+
+}
+
+
+.footer {
+    background-color: red;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+
+}
