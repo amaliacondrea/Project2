@@ -115,13 +115,22 @@ padding: 40px 10px;
 .title-paragraph > span{
  
    font-weight: bold;
-   background:red;
+   /* background:red; */
  /* border-style: solid; */
  
    border-radius: 5px;
 }
+.title-paragraph > span::after{
+    content:"] ";
+    color:red;
+    font-size: 45px;
 
-
+}
+.title-paragraph > span::before{
+    content:" [";
+    color: red;
+    font-size: 45px;
+}
 .descriptive-section{
     display: flexbox;
     width: 100%;
@@ -155,4 +164,5 @@ margin-left: 70px;
     height: 500px;
     padding-top: 50px;
 padding-right: 150px;
+
 }
