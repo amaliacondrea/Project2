@@ -2,13 +2,6 @@ body{
     margin:0;
 }
 
-.menu {
-background-color:black;
-
-height: 70px;
-width: 100%;
-
-}
 .gradient{
 
    width: 100;
@@ -42,31 +35,67 @@ width: 100%;
     background-repeat: repeat;
     left:20px;
 }
-.menu-buttons{
+
+.menu {
+    background-color:black;
+    width: 100%;
+}
+
+.menu-buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-   
 }
 
-.standard-buttons {
-background-color: black;
-color: white;
-text-transform: uppercase;
-height: 65px;
-margin-left: 15px;
-border: none;
+.general-button {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 0 !important;
 }
 
-.special-button{
-background-color: red;
-color: white;
-text-transform: uppercase;
-height: 65px;
-margin-left: 15px;
-border: none;
+.standard-button {
+    background-color: black;
+    margin-left: 15px;
+    border: none;
+}
 
+.special-button {
+    background-color: red;
+    margin-left: 15px;
+    border: none;
+}
+
+.standard-button:hover, .special-button:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.special-button:hover {
+    background-color: #d10000;
+    transition: 0.3s;
+}
+
+.standard-button:active {
+    border-top: 3px red solid;
+}
+
+.dropdown-menu {
+    border-radius: 0 !important;
+    margin: 0;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    text-decoration: none;
+    color: white;
+    background-color: initial;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: black;
 }
 
 .content{
