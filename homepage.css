@@ -4,28 +4,84 @@ body{
 
 .menu {
 background-color:black;
-height: 200px;
-width: 100%;
-}
 
+height: 70px;
+width: 100%;
+
+}
+.gradient{
+
+   width: 100;
+   height: 100px;
+    background-image: linear-gradient(-90deg, black, red);
+ 
+}
 .menu-buttons{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
    
+}
+.content{
+padding: 40px 10px;
+  background-color: black;
+ 
+  display: flex;
+}
+.images{
+    position: relative;
+    top:0;
+    left:0;
+    
+    background-color: black;
+    width: 903px;
+}
+#muscular-system{ 
+    position: absolute;
+    top:28px;
+    left:208px;
+    background-color: black;
+    display: flex;
+    float: left;
+    height: 460px;
+}
+#macbook-frame{
+    position: relative;
+    background-color: transparent;
+    top: 0;
+    left:0;
+    /* background-color: black; */
+    height: 535px;
+    width: 900px;
+}
+.title-paragraph{
 
-
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    justify-self: center;
+    line-height: 3;
+    
+}
+.title-paragraph > span{
+ 
+   font-weight: bold;
+   background:red;
+ /* border-style: solid; */
+ 
+   border-radius: 5px;
 }
 
 .standard-buttons {
-background-color: transparent;
-color:white;
+background-color: black;
+color: white;
 text-transform: uppercase;
 height: 65px;
 margin-left: 15px;
 border: none;
-
 }
 
 .special-button{
@@ -38,12 +94,7 @@ border: none;
 
 }
 
-
-.content {
-
-}
-
-
+/* 
 .footer {
     background-color: red;
     bottom: 0;
@@ -51,4 +102,35 @@ border: none;
     position: fixed;
     height: 100px;
 
+} */
+
+.footer-img{
+    width: 250px;
+    height: 200px;
 }
+footer {
+    /* position: fixed; */
+    width: 100%;
+    left:0;
+    bottom: 0;
+    text-align: center;
+ }
+ .footer-blog{
+     display: flex;
+     /* justify-content: last baseline; */
+     /* background-color:rgb(221, 210, 210); */
+     background-color: white;
+     justify-content: space-around;
+     position: relative;
+     width: 100%;
+    
+ }
+ footer h3{
+     width: 100%;
+     background-color:black;
+     padding: 10px;
+     color:white;
+     margin-top: 30px;
+     
+ }
+   
