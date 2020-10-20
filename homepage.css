@@ -77,19 +77,23 @@ body{
      width: 100px;
      height: 100px;
      background-color: rgb(223, 147, 23);
-    
      animation-name: animation;
      animation-duration: 10s;
-   }
-   
-   @keyframes animation {
-     0%   {background-color:rgb(223, 147, 23); left:0px; top:0px;}
-     25%  {background-color: rgb(223, 147, 23); left:1580px; top:0px;}
-     50%  {background-color:rgb(223, 147, 23); left:1580px; top:0px;}
-     75%  {background-color:rgb(223, 147, 23); right:1580px; top:0px;}
-     100%  {background-color:rgb(223, 147, 23); left:20px; top:0px;}
+
+     /* -webkit-transform: scaleX(-1);transform: scaleX(-1); */
+     
+       
    }
   
+   @keyframes animation {
+     /* 0%   {background-color:rgb(223, 147, 23); left:0px; top:0px;} */
+     /* 25%  {background-color: rgb(223, 147, 23); left:1580px; top:0px;} */
+     0%  {background-color:rgb(223, 147, 23); left:1580px; top:0px;
+        -webkit-transform: scaleX(-1);transform: scaleX(-1);}
+     /* 75%  {background-color:rgb(223, 147, 23); right:1580px; top:0px;} */
+     100%  {background-color:rgb(223, 147, 23); left:20px; top:0px;}
+   }
+
  #logo{
      background-color:rgb(223, 147, 23);
      position: absolute;
@@ -172,8 +176,6 @@ body{
     line-height: 2;
     text-align: center;
     text-transform: uppercase;
-    /* color: white; */
-    /* color:black */
     color: rgb(53, 87, 113);
 }
 
@@ -181,8 +183,8 @@ body{
     float: right;
     width: 600px;
     height: 500px;
-     padding-top: 50px;
-     margin-top: 30px;
+    padding-top: 50px;
+    margin-top: 30px;
 }
 
 .social-media{
