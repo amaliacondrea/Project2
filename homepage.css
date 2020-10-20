@@ -2,40 +2,6 @@ body{
     margin:0;
 }
 
-.gradient{
-
-   width: 100;
-   height: 100px;
-   position: relative;
-    background-image: linear-gradient(-90deg, black,red);
-    transition: linear;
- 
-}
-
-#logo {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    animation-name: animation;
-    animation-duration: 10s;
-  }
-  
-  @keyframes animation {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color: black ; left:1500px; top:0px;}
-    50%  {background-color:black; left:1500px; top:0px;}
-    75%  {background-color:darkred; right:1500px; top:0px;}
-    100%  {background-color:red; left:20px; top:0px;}
-  }
- 
-#logo{
-    background-color: red;
-    position: absolute;
-    background-repeat: repeat;
-    left:20px;
-}
-
 .menu {
     background-color:black;
     width: 100%;
@@ -64,7 +30,7 @@ body{
 }
 
 .special-button {
-    background-color: red;
+    background-color:rgb(53, 87, 113);
     margin-left: 15px;
     border: none;
 }
@@ -75,12 +41,13 @@ body{
 }
 
 .special-button:hover {
-    background-color: #d10000;
-    transition: 0.3s;
+   background-color: rgb(44, 70, 90);
+    /* background-color: #d10000; */
+   transition: 0.3s;
 }
 
 .standard-button:active {
-    border-top: 3px red solid;
+    border-top: 3px rgb(53, 87, 113) solid;
 }
 
 .dropdown-menu {
@@ -98,20 +65,53 @@ body{
     background-color: black;
 }
 
-.content{
-padding: 40px 10px;
-  background-color: black;
+
+.gradient{
+    width: 100;
+    height: 100px;
+    position: relative;
+    background-color:rgb(223, 147, 23)
+ }
  
+ #logo {
+     width: 100px;
+     height: 100px;
+     background-color: rgb(223, 147, 23);
+    
+     animation-name: animation;
+     animation-duration: 10s;
+   }
+   
+   @keyframes animation {
+     0%   {background-color:rgb(223, 147, 23); left:0px; top:0px;}
+     25%  {background-color: rgb(223, 147, 23); left:1580px; top:0px;}
+     50%  {background-color:rgb(223, 147, 23); left:1580px; top:0px;}
+     75%  {background-color:rgb(223, 147, 23); right:1580px; top:0px;}
+     100%  {background-color:rgb(223, 147, 23); left:20px; top:0px;}
+   }
+  
+ #logo{
+     background-color:rgb(223, 147, 23);
+     position: absolute;
+     background-repeat: repeat;
+     left:20px;
+ }
+ 
+
+.content{
+  padding: 40px 10px;
+  background-color: black;
   display: flex;
 }
+
 .images{
     position: relative;
     top:0;
     left:0;
-    
     background-color: black;
     width: 903px;
 }
+
 #muscular-system{ 
     position: absolute;
     top:28px;
@@ -121,50 +121,37 @@ padding: 40px 10px;
     float: left;
     height: 460px;
 }
+
 #macbook-frame{
     position: relative;
     background-color: transparent;
     top: 0;
     left:0;
-    /* background-color: black; */
     height: 535px;
     width: 900px;
 }
-.title-paragraph{
 
-    background-color: black;
+.title-paragraph{
     color: white;
     text-align: center;
     font-size: 38px;
     text-transform: uppercase;
-    justify-self: center;
+    align-self: center;
     line-height: 3;
     
 }
+
 .title-paragraph > span{
- 
    font-weight: bold;
-   /* background:red; */
- /* border-style: solid; */
- 
-   border-radius: 5px;
-}
-.title-paragraph > span::after{
-    content:"] ";
-    color:red;
-    font-size: 45px;
+   color: rgb(223, 147, 23);
 
 }
-.title-paragraph > span::before{
-    content:" [";
-    color: red;
-    font-size: 45px;
-}
+
 .descriptive-section{
-    display: flexbox;
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    height: 700px;
-   
+    height: 700px;  
 }
 
 .descriptive-paragraph {
@@ -173,11 +160,11 @@ padding: 40px 10px;
     height: auto;
     font-size: 20px;
     text-align: justify;
-padding: 50px ;
-margin-left: 70px;
-
+    padding-top: 50px;
+    color: rgb(40, 66, 87);
   
 }
+
 #subtitle{
     display: block;
     font-size: 28px;
@@ -185,13 +172,75 @@ margin-left: 70px;
     line-height: 2;
     text-align: center;
     text-transform: uppercase;
-    
+    /* color: white; */
+    /* color:black */
+    color: rgb(53, 87, 113);
 }
+
 .movie {
     float: right;
     width: 600px;
     height: 500px;
-    padding-top: 50px;
-padding-right: 150px;
+     padding-top: 50px;
+     margin-top: 30px;
+}
 
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+     
+}
+
+.social-media-icons{
+    width: 40px;
+    height: auto;
+    padding: 10px 0px 10px 15px;   
+}
+
+.social-media-icons:hover{
+    width: 50px;
+    height: auto;
+}
+
+.footer-img{
+    height: auto;
+    max-width: 100%;
+    width: 230px;
+    height: 200px;
+    opacity: 75%;
+}
+
+footer {
+   width: 100%;
+   left:0;
+   bottom: 0;
+   text-align: center;
+}
+
+.footer-blog{
+    display: flex;
+    justify-content:space-around;
+    /* position: relative; */
+    width: 100%;  
+}
+
+.top-footer{
+    width: 100%;
+    height: 30px;
+    background:rgb(53, 87, 113);
+}
+
+.footer-img:hover{
+    width: 250px;
+    height: 220px;
+    border: rgb(53, 87, 113) solid;
+    opacity: unset;
+}
+
+.bottom-footer{
+    width: 100%;
+    height: 30px;
+    background-color:rgb(53, 87, 113);
 }
