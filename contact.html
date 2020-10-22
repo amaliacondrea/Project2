@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                 <a class="nav-link general-button standard-button" href="#">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link general-button standard-button" href="/contact.html">Contact</a>
+                <a class="nav-link general-button standard-button" href="#">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link general-button special-button" href="#">Start Here</a>
@@ -41,37 +42,40 @@
         <img id="logo" src="/photos/flexibility-clipart-14.png" width="100" height="100" alt="">
     </div>
 
-    <div class="content">
-        <div class="images">
-            <img id="muscular-system"
-                src="/photos/FAVPNG_muscular-system-human-musculoskeletal-system-muscle-human-body-anatomy_LGx90uw1.png"
-                alt="muscular-system">
-            <img id="macbook-frame" src="/photos/PngItem_1609751.png" alt="">
+
+
+<div class="wrapper">
+        <div class="contact-title">
+            <p>Speak Your Mind</p>
         </div>
-        <p class="title-paragraph">Take <span>Control</span> Of Your <span>Health</span><br>
-            Through Online <span>Physical</span>
-            Therapy</p>
-    </div>
-    <div class="descriptive-section">
 
-        <p class="descriptive-paragraph">
-            <span id="subtitle">
-                Why it’s important for me to do my home exercise program? </span> <br><br>
-            So… you have been injured or have some condition that requires you to visit a qualified healthcare
-            practitioner (i.e. a physical therapist). Were you given “homework?” In other words, did the
-            practitioner give you a home exercise program, commonly called an H.E.P., to assist you in your road to
-            recovery? If so, it is highly advisable to follow through and actually do what your practitioner has
-            prescribed to you. Not doing so could certainly lead to a longer recovery or no recovery at all! Who
-            wants that? What is the use of seeking professional advice if you have no follow through on your part?
-            Healthcare clinicians (aka practitioners) are not magicians! Taking care of yourself requires your
-            active participation!
-        </p>
+        <form class="form">
 
-        <video class="movie"  controls poster="/photos/exercise-stretching-icons-vector-2265556.jpg">
-            <source src="/photos/movie.mp4" type="video/mp4">
-    </div>
-    </div>
-
+            <ul>
+                <li>
+                    <input type="text" name="field1" class="field-style field-split align-left"
+                        placeholder="First name" />
+                    <input type="text" name="field2" class="field-style field-split align-right"
+                        placeholder="Last name" />
+                </li>
+                <li>
+                    <input type="text" name="field3" class="field-style field-split align-left" placeholder="Phone" />
+                    <input type="email" name="field4" class="field-style field-split align-right" placeholder="Email" />
+                    <!-- <input type="url" name="field4" class="field-style field-split align-right" placeholder="Website" /> -->
+                </li>
+                <li>
+                    <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+                </li>
+                <li>
+                    <textarea name="field5" class="field-style" placeholder="Message"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Send Message" />
+                </li>
+            </ul>
+        </form>
+</div>
+    
     <footer>
         <div class="social-media">
             <h4>FOLLOW US </h4>
@@ -84,7 +88,7 @@
             </div>
 
         </div>
-        
+
         <div class="top-footer">
 
         </div>
@@ -93,14 +97,15 @@
                 <img class="footer-img" src="/photos/What-is-Dry-Needling-INSTAGRAM.png" alt=""></a>
             <a href="#">
                 <img class="footer-img" src="/photos/How-much-do-I-need-to-stretch-INSTAGRAM.png" alt=""></a>
-            <a href="#"> <img class="footer-img"
-                    src="/photos/Perfect-Work-Desk-Posture-INSTAGRAM-scaled.jpg" alt=""></a>
+            <a href="#"> <img class="footer-img" src="/photos/Perfect-Work-Desk-Posture-INSTAGRAM-scaled.jpg"
+                    alt=""></a>
             <a href="#">
                 <img class="footer-img" src="/photos/Understanding-Recovery-INSTAGRAM.jpg" alt=""></a>
             <a href="#">
                 <img class="footer-img" src="/photos/Runners-knee-causes-treatment-INSTAGRAM.png" alt=""></a>
             <a href="#">
-                <img class="footer-img" src="/photos/Motor-Imagery-In-Rehabilitative-Medicine-INSTAGRAM-scaled.jpg" alt=""></a>
+                <img class="footer-img" src="/photos/Motor-Imagery-In-Rehabilitative-Medicine-INSTAGRAM-scaled.jpg"
+                    alt=""></a>
             <a href="#">
                 <img class="footer-img" src="/photos/The-Health-Benefits-of-Sleep-INSTAGTRAM.png" alt=""></a>
         </div>
@@ -108,6 +113,8 @@
 
         </div>
     </footer>
+
+
 </body>
 
 </html>
